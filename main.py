@@ -15,7 +15,7 @@ def verify_guess(guess, secret_number):
         print(f"Parabéns, você ganhou! O número secreto era {secret_number}")
         return True
 
-    elif guess > 100:
+    elif guess > 100 or guess < 1:
         print("Número inválido, por favor escolha um número entre 1 e 100")
 
     elif guess < secret_number:
